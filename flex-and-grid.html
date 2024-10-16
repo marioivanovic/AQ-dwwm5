@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Flexbox and Grid</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Ma première navbar</h1>
+        <nav>
+            <ul>
+                <li> <a href="./index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="./git.html">Git</a>
+                </li>
+                <li>
+                    <a href="./cmd-line.html">Command Line Windows</a>
+                </li>
+                <li>
+                    <a href="./naming.html">Naming</a>
+                </li>
+                <li>
+                    <a href="./prestashop.html">Prestashop</a>
+                </li>
+                <li>
+                    <a href="./formulaire.html">Formulaires</a>
+                </li>
+                <li>
+                    <a href="./liste.html">Listes</a>
+                </li>
+                <li>
+                    <a href="./position.html">Positions</a>
+                </li>
+                <li>
+                    <a href="./recette.html">Recette</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Flexbox</h1>
+
+        <h2>Conteneur Flex de base</h2>
+        <div class="flex-container">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+
+        <h2>Propriétés Flex</h2>
+        <div class="flex-container">
+            <div class="flex-item grow">Grow</div>
+            <div class="flex-item shrink">Shrink</div>
+            <div class="flex-item basis">Basis</div>
+        </div>
+
+        <h1>Grid</h1>
+
+        <h2>Grille de base</h2>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+
+        <h2>Grille avec éléments étendus</h2>
+        <div class="grid-container">
+            <div class="grid-item span-2">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item span-3">5</div>
+        </div>
+
+
+        <h1>Display</h1>
+
+        <h2>Inline</h2>
+
+        <div class="section">
+            <span class="box inline">Element 1</span>
+            <span class="box inline">Element 2</span>
+            <span class="box inline">Element 3</span>
+        </div>
+
+        <h2>Block</h2>
+
+        <div class="section">
+            <div class="box block">Element block 1</div>
+            <div class="box block">Element block 2</div>
+        </div>
+
+        <h2>Inline block</h2>
+        <div class="inline-block">
+            <div class="box inline_block">Inline block 1</div>
+            <div class="box inline_block">Inline block 2</div>
+            <div class="box inline_block">Inline block 3</div>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Positions</title>
+</head>
+
+<body>
+
+    <header>
+        <h3 class="title">Navbar</h3>
+        <nav>
+            <ul>
+                <li> <a href="./index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="./git.html">Git</a>
+                </li>
+                <li>
+                    <a href="./cmd-line.html">Command Line Windows</a>
+                </li>
+                <li>
+                    <a href="./naming.html">Naming</a>
+                </li>
+                <li>
+                    <a href="./prestashop.html">Prestashop</a>
+                </li>
+                <li>
+                    <a href="./formulaire.html">Formulaires</a>
+                </li>
+                <li>
+                    <a href="./liste.html">Listes</a>
+                </li>
+                <li>
+                    <a href="./flex-and-grid.html">Flexbox, Grid & Display</a>
+                </li>
+                <li>
+                    <a href="./recette.html">Recette</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Position</h1>
+
+        <h2>Static (Normal)</h2>
+        <div class="position_container">
+            <div class="toy static">
+                Cas d'utilisation :
+                - Flux normal du document pour la plupart des éléments
+                - Paragraphes de texte
+                - Images inline
+                - Éléments de formulaire standard</div>
+        </div>
+
+        <h2>Relative (Un peu bougé)</h2>
+        <div class="position_container">
+            <div class="toy relative">
+                Cas d'utilisation :
+                - Ajustements mineurs de position sans affecter les autres éléments
+                - Conteneur pour des éléments en position absolute
+                - Création de superpositions légères (z-index)</div>
+        </div>
+
+        <h2>Absolute (Où tu veux)</h2>
+        <div class="position_container">
+            <div class="toy absolute">
+                Cas d'utilisation :
+                - Superposition d'éléments (modals, tooltips)
+                - Icônes ou badges positionnés sur d'autres éléments
+                - Éléments de navigation flottants
+                - Positionnement précis d'éléments dans un conteneur
+            </div>
+        </div>
+
+        <h2>Fixed (Collé)</h2>
+        <div class="toy fixed">
+            Cas d'utilisation :
+            - Barres de navigation qui restent visibles lors du défilement
+            - Boutons "Retour en haut"
+            - Bannières d'annonces ou de cookies
+            - Chat widgets fixes
+        </div>
+
+        <div class="sticky-container">
+            <div class="toy sticky">Jouet</div>
+            <p>Fais défiler cette boîte pour voir le jouet collant en action !</p>
+            <p>Il reste en haut quand tu fais défiler, mais seulement dans cette boîte.</p>
+            <p>
+                Cas d'utilisation :
+                - En-têtes de section qui restent visibles lors du défilement
+                - Navigation secondaire dans une longue page
+                - Éléments de publicité qui suivent le défilement dans une certaine limite
+                - Table des matières qui reste visible
+            </p>
+        </div>
+
+        <p>Le jouet "Fixed" reste collé en bas à droite de la fenêtre, même quand tu fais défiler la page.</p>
+
+        <p>
+            Par défaut, le contexte de positionnement pour tous les éléments est le viewport (la fenêtre du navigateur).
+            <br>
+            Cela signifie que si vous positionnez un élément en absolute sans un parent positionné, il se positionnera
+            <br>
+            par rapport aux bords de la fenêtre du navigateur
+        </p>
+
+        <p>
+            Lorsqu'un élément est positionné avec relative, absolute, ou fixed, il crée un nouveau contexte de <br>
+            positionnement pour ses enfants. Cela signifie que : <br>
+
+            Pour position: relative : <br>
+
+            L'élément lui-même reste dans le flux normal du document. <br>
+            Il devient un point de référence pour les éléments enfants positionnés en absolute. <br>
+
+
+            Pour position: absolute : <br>
+
+            L'élément est retiré du flux normal du document. <br>
+            Il devient un point de référence pour ses propres enfants positionnés en absolute. <br>
+            Il se positionne par rapport à son ancêtre positionné le plus proche (pas statique), <br> ou le viewport si
+            aucun ancêtre n'est positionné. <br>
+
+
+            Pour position: fixed : <br>
+
+            L'élément est retiré du flux normal du document. <br>
+            Il se positionne toujours par rapport au viewport. <br>
+            Il crée un nouveau contexte de positionnement pour ses enfants, mais ceux-ci se positionnent <br>
+            par rapport à l'élément fixed, pas au viewport.
+        </p>
+    </main>
+</body>
+
+</html>
