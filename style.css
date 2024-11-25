@@ -217,7 +217,7 @@ img{
 }
 
 .parent > .direct-child{
-    background: red;
+    background: rgb(240, 147, 147);
     font-style: bold;
     font-size: 1.5em;
 }
@@ -414,4 +414,38 @@ img{
     width: 150px;
     height: 50px;
   }
+
+  .responsive{
+    background: rgb(255, 255, 0);
+}
 /* RESPONSIVE */
+
+@media only screen and (min-width: 768px) and (max-width: 768px){
+    .responsive{
+        border: 2px solid black;
+        background:rgb(240, 147, 147);
+        margin: 30px;
+        width: 200px;
+        height: 200px;
+        color: yellowgreen;
+    }
+
+    .container-boxes{
+        margin: 30px;
+        width :400px;
+        height : 200px;
+        background-image: url(./ivan-torres-MQUqbmszGGM-unsplash.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+}
+
+
+.lorem{
+    margin: 3em;
+    background: green;
+    height: 300px;
+    width: 300px;
+    text-align: left;
+}
