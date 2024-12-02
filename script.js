@@ -369,20 +369,20 @@ Créez un système qui calcule une remise selon :
 
 // function calculerRemise(montant, ClientFidele) {
 //     let tauxRemise = 0;
-    
+
 //     if (montant > 200) {
 //         tauxRemise = 0.15; // 15%
 //     } else if (montant > 100) {
 //         tauxRemise = 0.10; // 10%
 //     }
-    
+
 //     if (ClientFidele) {
 //         tauxRemise += 0.05; // +5%
 //     }
-    
+
 //     const remise = montant * tauxRemise;
 //     const montantFinal = montant - remise;
-    
+
 //     return {
 //         montantInitial: montant,
 //         tauxRemise: tauxRemise * 100 + '%',
@@ -394,7 +394,7 @@ Créez un système qui calcule une remise selon :
 // console.log(calculerRemise(250, true));
 
 // function nomFonction(nbr) {
-    
+
 // }
 
 // nomFonction(3)
@@ -454,7 +454,7 @@ let nombreEnnemis = 0;
 
 console.log("avant la boucle :", superMario);
 
-while(superMario.life > 0){
+while (superMario.life > 0) {
     nombreEnnemis++;
     superMario.life--;
 }
@@ -469,6 +469,130 @@ console.log("après la boucle", superMario);
 // - au moins un chiffre 
 // - au moins un caractère spécial
 
-    
+
 //     / (?=.* [a - z] ?/
-    
+
+
+
+// const users = [{ name: "Samia" }, { name: "Jordan" }, { name: "Lucie" }, { name: "Mathis" }, { name: "Eleanore" }, { name: "Bruno" }, { name: "Louis" }];
+
+// console.log("Name à l'index 3 :", users[3].name)
+
+// DO...while
+
+let contenuBol = 500;
+
+do {
+    console.log("Mange la soupe :", contenuBol);
+    let qteMangee = Math.ceil(Math.random() * (0, 100));
+    // génère un nombre aléatoire entre 0 et 100 et va l'arrondir à l'entier inférieur
+    contenuBol -= qteMangee;
+} while (contenuBol >= 0);
+
+const users = [{ name: "Samia" }, { name: "Jordan" }, { name: "Lucie" }, { name: "Mathis" }, { name: "Eleanore" }, { name: "Bruno" }, { name: "Louis" }];
+
+
+for (let i = 0; i < users.length; i += 1) {
+    console.log(i, users[i].name)
+}
+
+console.log("-------")
+
+for (let i = 0; i < 101; i += 1) {
+    console.log(i)
+    console.log("-------")
+}
+
+console.log("---MOINS----")
+
+for (let i = 10; i > -1; i -= 5) {
+    console.log(i)
+    console.log("--- Tour ---")
+}
+
+const phraseSimple = "Voici une phrase toute simple, en guise d'exemple !";
+console.log("Parcourir toutes les lettres d'une phrase ----");
+
+for (let index = 0; index < phraseSimple.length - 1; index++) {
+    console.log(phraseSimple[index]);
+}
+const assofac = [{
+    name: "Karla", promo: "dww5"
+},
+{
+    name: "Mohamed", promo: "dww5"
+},
+{
+    name: "Sami", promo: "dww5"
+},
+{
+    name: "Noah", promo: "dww5"
+},
+{
+    name: "Yacine", promo: "dww5"
+},
+{
+    name: "Arthur", promo: "dww5"
+},
+{
+    name: "Maimouna", promo: "dww5"
+},
+{
+    name: "Farah", promo: "dww5"
+},
+{
+    name: "Mahamoudou", promo: "dww5"
+},
+{
+    name: "Ilyas", promo: "dww5"
+},
+{
+    name: "Asma", promo: "dww5"
+},
+{
+    name: "Nishan", promo: "dww5"
+},]
+
+
+for (let j = 0; j < assofac.length; j++) {
+    console.log(assofac[j].name)
+}
+
+let valeur = 0;
+
+for (let k = 0; k < assofac.length; k++) {
+    // console.log(assofac[k].nom)
+    valeur += assofac[k].name.length
+}
+
+console.log(valeur)
+
+
+function multiplication(var1, var2) {
+    return var1*var2
+}
+console.log("resultat multiplication")
+
+console.log(multiplication(3, 5))
+
+
+// function motPlusLong(mot1, mot2) {
+//     if (mot1.length > mot2.length) {
+//         return mot1
+//     } else {
+//         return mot2
+//     }
+// }
+
+// console.log(motPlusLong("gateau", "pistache"))
+
+const cat = {
+    name: "Felix",
+    age: 1,
+    talk: function (humeur) {
+        return humeur === "bonne" ? "meeoowwww" : " shhhrrrrrhhh"
+    }
+}
+
+
+console.log(cat.talk("bonne"))
