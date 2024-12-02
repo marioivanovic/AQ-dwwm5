@@ -463,10 +463,12 @@ console.log("Ennemis : ", nombreEnnemis);
 console.log("après la boucle", superMario);
 
 
-Créer une fonction qui vérifie si un mot de passe  est valide:
-- au moins 8 caractères
-- au moins une majuscule
-- au moins un chiffre 
-- au moins un caractère spécial
+// Créer une fonction qui vérifie si un mot de passe  est valide:
+// - au moins 8 caractères
+// - au moins une majuscule
+// - au moins un chiffre 
+// - au moins un caractère spécial
 
-
+    
+//     / (?=.* [a - z] ?/
+    
