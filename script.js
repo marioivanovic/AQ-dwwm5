@@ -420,57 +420,144 @@ Créez un système qui calcule une remise selon :
 // let word1 = "Hello !"
 // console.log(word1[3], word[3])
 
-let x = 0;
-console.log(x);
-console.log("------------------");
-x = x + 1;
-console.log(x)
-console.log("------------------");
-x += 1
-console.log(x)
-console.log("------------------");
-x += 10; // => x = x + 10
-console.log(x);
-console.log("------------------");
-x++;
-console.log(x);
-x--;
-console.log(x);
+// let x = 0;
+// console.log(x);
+// console.log("------------------");
+// x = x + 1;
+// console.log(x)
+// console.log("------------------");
+// x += 1
+// console.log(x)
+// console.log("------------------");
+// x += 10; // => x = x + 10
+// console.log(x);
+// console.log("------------------");
+// x++;
+// console.log(x);
+// x--;
+// console.log(x);
 
-console.log("------------------");
-// WHILE
-let count = 0;
-while (count <= 20) {
-    console.log(count);
-    count++;
-}
+// console.log("------------------");
+// // WHILE
+// let count = 0;
+// while (count <= 20) {
+//     console.log(count);
+//     count++;
+// }
 
-let superMario = {
-    score: 0,
-    life: 100,
-};
+// let superMario = {
+//     score: 0,
+//     life: 100,
+// };
 
-let nombreEnnemis = 0;
+// let nombreEnnemis = 0;
 
-console.log("avant la boucle :", superMario);
+// console.log("avant la boucle :", superMario);
 
-while (superMario.life > 0) {
-    nombreEnnemis++;
-    superMario.life--;
-}
+// while (superMario.life > 0) {
+//     nombreEnnemis++;
+//     superMario.life--;
+// }
 
-console.log("Ennemis : ", nombreEnnemis);
-console.log("après la boucle", superMario);
+// console.log("Ennemis : ", nombreEnnemis);
+// console.log("après la boucle", superMario);
 
 
-// Créer une fonction qui vérifie si un mot de passe  est valide:
+// Créer une fonction qui vérifie si un mot de passe est valide:
 // - au moins 8 caractères
 // - au moins une majuscule
 // - au moins un chiffre 
 // - au moins un caractère spécial
 
+// function VerifMdp(mdp) {
+//     if (mdp.length < 8) return false;
+//     const majuscule = "{A-Z}";
+//     const chiffre = "{0-9}";
+//     const special = "{&'#!?}";
+//     return (
+//         majuscule.test("mdp") &&
+//         chiffre.test("mdp") &&
+//         special.test("mdp")
+//     );
+// }
+
+// console.log(VerifMdp("Test,8hdjhl4"))
+
+// const str = "football";
+// const regex = new RegExp('foo*');
+// const globalRegex = new RegExp('foo*', 'g');
+
+// console.log(globalRegex.test(str));
+
 
 //     / (?=.* [a - z] ?/
+// function checkPassword(characters) {
+//     const min_length = 8;
+//     const error_length = 'erreur : le mot de passe doit faire au moins 8 charactères';
+//     const valide_password = "mot de passe valide !";
+//     const erreur_prefix = "il manque : ";
+//     const erreur = {
+//         upper: "Majuscule",
+//         lower: "minuscule",
+//         number: "un chiffre",
+//         special: "un caractère spécial"
+//     };
+//     const missing_element = [];
+
+//     if (characters.length < min_length) {
+//         return error_length;
+//     } else {
+//         const status = {
+//             hasUpper: false,
+//             hasLower: false,
+//             hasNumber: false,
+//             hasSpecial: false
+//         };
+//         for (const char of characters) {
+//             if (char >= 'A' && char <= 'Z') {
+//                 status.hasUpper = true
+//             } else if (char >= 'a' && char <= 'z') {
+//                 status.hasLower = true
+//             } else if (char >= '0' && char <= '9') {
+//                 status.hasNumber = true
+//             } else {
+//                 status.hasSpecial = true
+//             }
+
+//             if (!status.hasUpper) {
+//                 missing_element.push(erreur.upper);
+//             }
+//             if (!status.hasLower) {
+//                 missing_element.push(erreur.lower);
+//             }
+//             if (!status.hasNumber) {
+//                 missing_element.push(erreur.number);
+//             }
+//             if (!status.hasSpecial) {
+//                 missing_element.push(erreur.special);
+//             };
+//             if (missing_element.length > 0) {
+//                 return erreur_prefix + missing_element.join("", "");
+//             } else {
+//                 return valid_password;
+//             }
+//         }
+
+//     }
+// }
+// const test_password = ["abc", "abcdefgh", "ABCDEFGH", "ABCD1234", "Abcdefgh", "abcd1234!", "Abcd123!"];
+
+// console.log("===, testDesMotsDePasse ===");
+// test_password.forEach(password => {
+//     const result = checkPassword(password);
+//     console.log(` "${password}" : ${result}`);
+// });
+
+// let bonbons = ["citron", "abricot", "peche", "fraise"];
+
+// bonbons.forEach(bonbon => {
+//     console.log( `${bonbon}`);
+// })
 
 
 
@@ -480,100 +567,100 @@ console.log("après la boucle", superMario);
 
 // DO...while
 
-let contenuBol = 500;
+// let contenuBol = 500;
 
-do {
-    console.log("Mange la soupe :", contenuBol);
-    let qteMangee = Math.ceil(Math.random() * (0, 100));
-    // génère un nombre aléatoire entre 0 et 100 et va l'arrondir à l'entier inférieur
-    contenuBol -= qteMangee;
-} while (contenuBol >= 0);
+// do {
+//     console.log("Mange la soupe :", contenuBol);
+//     let qteMangee = Math.ceil(Math.random() * (0, 100));
+//     // génère un nombre aléatoire entre 0 et 100 et va l'arrondir à l'entier inférieur
+//     contenuBol -= qteMangee;
+// } while (contenuBol >= 0);
 
-const users = [{ name: "Samia" }, { name: "Jordan" }, { name: "Lucie" }, { name: "Mathis" }, { name: "Eleanore" }, { name: "Bruno" }, { name: "Louis" }];
-
-
-for (let i = 0; i < users.length; i += 1) {
-    console.log(i, users[i].name)
-}
-
-console.log("-------")
-
-for (let i = 0; i < 101; i += 1) {
-    console.log(i)
-    console.log("-------")
-}
-
-console.log("---MOINS----")
-
-for (let i = 10; i > -1; i -= 5) {
-    console.log(i)
-    console.log("--- Tour ---")
-}
-
-const phraseSimple = "Voici une phrase toute simple, en guise d'exemple !";
-console.log("Parcourir toutes les lettres d'une phrase ----");
-
-for (let index = 0; index < phraseSimple.length - 1; index++) {
-    console.log(phraseSimple[index]);
-}
-const assofac = [{
-    name: "Karla", promo: "dww5"
-},
-{
-    name: "Mohamed", promo: "dww5"
-},
-{
-    name: "Sami", promo: "dww5"
-},
-{
-    name: "Noah", promo: "dww5"
-},
-{
-    name: "Yacine", promo: "dww5"
-},
-{
-    name: "Arthur", promo: "dww5"
-},
-{
-    name: "Maimouna", promo: "dww5"
-},
-{
-    name: "Farah", promo: "dww5"
-},
-{
-    name: "Mahamoudou", promo: "dww5"
-},
-{
-    name: "Ilyas", promo: "dww5"
-},
-{
-    name: "Asma", promo: "dww5"
-},
-{
-    name: "Nishan", promo: "dww5"
-},]
+// const users = [{ name: "Samia" }, { name: "Jordan" }, { name: "Lucie" }, { name: "Mathis" }, { name: "Eleanore" }, { name: "Bruno" }, { name: "Louis" }];
 
 
-for (let j = 0; j < assofac.length; j++) {
-    console.log(assofac[j].name)
-}
+// for (let i = 0; i < users.length; i += 1) {
+//     console.log(i, users[i].name)
+// }
 
-let valeur = 0;
+// console.log("-------")
 
-for (let k = 0; k < assofac.length; k++) {
-    // console.log(assofac[k].nom)
-    valeur += assofac[k].name.length
-}
+// for (let i = 0; i < 101; i += 1) {
+//     console.log(i)
+//     console.log("-------")
+// }
 
-console.log(valeur)
+// console.log("---MOINS----")
+
+// for (let i = 10; i > -1; i -= 5) {
+//     console.log(i)
+//     console.log("--- Tour ---")
+// }
+
+// const phraseSimple = "Voici une phrase toute simple, en guise d'exemple !";
+// console.log("Parcourir toutes les lettres d'une phrase ----");
+
+// for (let index = 0; index < phraseSimple.length - 1; index++) {
+//     console.log(phraseSimple[index]);
+// }
+// const assofac = [{
+//     name: "Karla", promo: "dww5"
+// },
+// {
+//     name: "Mohamed", promo: "dww5"
+// },
+// {
+//     name: "Sami", promo: "dww5"
+// },
+// {
+//     name: "Noah", promo: "dww5"
+// },
+// {
+//     name: "Yacine", promo: "dww5"
+// },
+// {
+//     name: "Arthur", promo: "dww5"
+// },
+// {
+//     name: "Maimouna", promo: "dww5"
+// },
+// {
+//     name: "Farah", promo: "dww5"
+// },
+// {
+//     name: "Mahamoudou", promo: "dww5"
+// },
+// {
+//     name: "Ilyas", promo: "dww5"
+// },
+// {
+//     name: "Asma", promo: "dww5"
+// },
+// {
+//     name: "Nishan", promo: "dww5"
+// },]
 
 
-function multiplication(var1, var2) {
-    return var1*var2
-}
-console.log("resultat multiplication")
+// for (let j = 0; j < assofac.length; j++) {
+//     console.log(assofac[j].name)
+// }
 
-console.log(multiplication(3, 5))
+// let valeur = 0;
+
+// for (let k = 0; k < assofac.length; k++) {
+//     // console.log(assofac[k].nom)
+//     valeur += assofac[k].name.length
+// }
+
+// console.log(valeur)
+
+
+// function multiplication(var1, var2) {
+//     return var1 * var2
+// }
+// console.log("resultat multiplication")
+
+// console.log(multiplication(3, 5))
 
 
 // function motPlusLong(mot1, mot2) {
@@ -586,13 +673,155 @@ console.log(multiplication(3, 5))
 
 // console.log(motPlusLong("gateau", "pistache"))
 
-const cat = {
-    name: "Felix",
-    age: 1,
-    talk: function (humeur) {
-        return humeur === "bonne" ? "meeoowwww" : " shhhrrrrrhhh"
+// const cat = {
+//     name: "Felix",
+//     age: 1,
+//     talk: function (humeur) {
+//         return humeur === "bonne" ? "meeoowwww" : " shhhrrrrrhhh"
+//     }
+// }
+
+
+// console.log(cat.talk("bonne"))
+
+
+for (let i = 0; i <= 10; i++) {
+    console.log(`2 x ${i} = ${2 * i}`)
+}
+
+let i = 10;
+while (i >= 0) {
+    console.log(i)
+    i--;
+}
+
+// i++ === i += 1;
+
+const nombres = [1, 4, 8, 12, 98, 10005, 99304, 938839, 992886630090];
+let liste = [];
+
+for (let i = 0; i < nombres.length; i++) {
+    if (nombres[i] % 2 === 0) {
+        liste.push(nombres[i])
     }
 }
 
+const nombres2 = [1, 4, 8, 12, 98, 10005, 99304, 938839, 992886630090];
+let liste2 = [];
 
-console.log(cat.talk("bonne"))
+nombres2.forEach((nombre) => {
+    if (nombre % 2 === 0) {
+        liste2.push(nombre)
+    }
+})
+
+
+
+
+console.log("Nombres pairs avec for :", liste)
+console.log(liste2)
+
+const card = [{ name: "Ps5", price: 700 },
+{ name: "Xbox", price: 400 },
+{ name: "PC", price: 2000 },
+{ name: "Nintendo Switch", price: 300 },];
+let total = 0;
+card.forEach((article) => {
+    total += article.price
+    console.log(` Article : ${article.name} - Price : ${article.price}`);
+})
+
+console.log(`Total : ${total} €`)
+
+
+
+
+
+
+let x = 100;
+function bar() {
+    let count = 10;
+    console.log("---1----")
+    console.log("count dans bar :", count);
+    console.log("x dans bar :", x);
+}
+
+console.log(bar())
+
+function baz() {
+    let count = 0;
+    console.log("---2----");
+    console.log("count dans baz", count);
+    console.log("x dans baz :", x);
+}
+console.log(baz());
+
+
+let varGlobale = "Je suis globale";
+console.log(varGlobale)
+function test() {
+    let varLocale = "Je suis locale";
+    console.log(varLocale)
+    console.log(varGlobale)
+}
+console.log(varGlobale)
+console.log(test())
+// console.log(varLocale)
+
+
+function gateau(recette) {
+    console.log("préparation des ingrédients");
+    console.log("début de la préparation");
+    recette();
+}
+
+function recette() {
+    console.log("on fait le gateau ici!")
+}
+
+console.log(gateau(recette));
+
+const products = [{
+    id: 1, name: "iPhone", price: 1500, stock: 0
+},
+{
+    id: 1, name: "Samsung", price: 1200, stock: 9800
+},
+{
+    id: 1, name: "Huawai", price: 500, stock: 11220
+},
+{
+    id: 1, name: "Motorola", price: 100, stock: 44330
+},
+{
+    id: 1, name: "Nokia", price: 200, stock: 30
+},
+{
+    id: 1, name: "LG", price: 700, stock: 400
+},
+{
+    id: 1, name: "Pixel", price: 1000, stock: 90
+},
+{
+    id: 1, name: "Oppo", price: 900, stock: 3
+}]
+
+
+function productFiltered(productsFilter, priceLimit) {
+    const filtered = [];
+    for (let index = 0; index < productsFilter.length; index++) {
+        if (productsFilter[index].price >= priceLimit) {
+            filtered.push(productsFilter[index]);
+        }
+    }
+    return filtered;
+}
+const filtered1 = products.filter(function (product) {
+    return product.price >= 1000;
+});
+const newFiltered = products.filter(product => product.price >= 1000);
+
+console.log(productFiltered(products, 1000));
+console.log("Filter =>", filtered1);
+console.log("New filter = >", newFiltered)
+
