@@ -825,3 +825,101 @@ console.log(productFiltered(products, 1000));
 console.log("Filter =>", filtered1);
 console.log("New filter = >", newFiltered)
 
+const sum = products.reduce(function (accumulateur, product) {
+    if (isNaN(product.price)) throw new TypeError("sorry gros, ça marche pas ici !!!");
+    return (accumulateur += Number(product.price));
+}, 0);
+
+console.log("Somme du prix de tous les produits est :", sum)
+
+const array1 = [1, 2, 3, 4];
+
+const initalValue = 0;
+
+const sumInitial = array1.reduce((accumulateur, currentValue) => accumulateur + currentValue, initalValue);
+
+console.log(sumInitial);
+
+// Synchrone - Asynchrone 
+
+const timeOut = setTimeout(function () {
+    console.log("Action 1 terminée !!! Yay !");
+    clearTimeout(timeOut);
+}, 3000)
+
+const callback = () => {
+    console.log("Autre action terminée !")
+    clearTimeout(callback)
+}
+
+const newTimeOut = setTimeout(callback, 3000);
+
+let countFoo = 0;
+
+const interval = setInterval(() => {
+    countFoo++
+    console.log("count ++ setInterval", countFoo);
+    if (countFoo === 10) clearInterval(interval)
+}, 1000)
+
+
+const users = [
+    { name: "bill", lastname: "bar", id: 10, age: 20, email: "foo@bar.com" },
+    { name: "jane", lastname: "doe", id: 30, age: 40, email: "jane@doe.io" },
+    {
+      name: "jim",
+      lastname: "foo",
+      id: 100,
+      age: 30,
+      email: "jimmy@foo.org",
+      isAdmin: true
+    }
+  ];
+
+const prods = [
+    {
+        id: 1,
+        name: "Sony Bravia",
+        price: 500,
+        stock: 20,
+        rate: 3.5,
+        category: "multimedia"
+    },
+    {
+        id: 2,
+        name: "skateboard element full",
+        price: 180,
+        stock: 3,
+        rate: 5,
+        category: "sport"
+    },
+    {
+        id: 3,
+        name: "Samsung S7",
+        price: 600,
+        stock: 10,
+        rate: 4,
+        category: "multimedia"
+    },
+    {
+        id: 4,
+        name: "Baby radio",
+        price: 20,
+        stock: 100,
+        rate: 5,
+        category: "babies"
+    }
+];
+
+const orders = [
+    { id: 1, userID: 10, productID: 1234, quantity: 2, date: "19-02-2019" },
+    { id: 2, userID: 10, productID: 1, quantity: 1, date: "01-01-2020" },
+    { id: 3, userID: 30, productID: 2, quantity: 1, date: "25-03-2020" }
+];
+  
+function isUserValid(id) {
+    const userFound = users.filter(user => user.id === id);
+    return userFound.length === 1;
+}
+
+console.log(isUserValid())
