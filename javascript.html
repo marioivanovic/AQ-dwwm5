@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href=#home">Accueil</a>
+                </li>
+                <li>
+                    <a href="./git.html">Git</a>
+                </li>
+                <li>
+                    <a href="./cmd-line.html">Command Line Windows</a>
+                </li>
+                <li>
+                    <a href="./naming.html">Naming</a>
+                </li>
+                <li>
+                    <a href="./prestashop.html">Prestashop</a>
+                </li>
+                <li>
+                    <a href="./formulaire.html">Formulaires</a>
+                </li>
+                <li>
+                    <a href="./liste.html">Listes</a>
+                </li>
+                <li>
+                    <a href="./flex-and-grid.html">Flexbox, Grid & Display</a>
+                </li>
+                <li>
+                    <a href="./position.html">Positions</a>
+                </li>
+                <li>
+                    <a href="./tables.html">Tables</a>
+                </li>
+                <li>
+                    <a href="./fonts.html">Fonts</a>
+                </li>
+                <li>
+                    <a href="./recette.html">Recette</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1> Qu'est-ce que JavaScript ?</h1>
+
+        <p>JavaScript est un langage de programmation qui permet de rendre les sites web dynamiques et interactifs. Si
+            HTML est la structure et CSS le style, JavaScript est le comportement de votre site.</p>
+
+        <h2>NodeJS</h2>
+        <p>NodeJS est un environnement d'exécution JavaScript côté serveur. En gros, il permet d'utiliser JavaScript non
+            seulement dans le navigateur (frontend) mais aussi côté serveur (backend). </p>
+
+        <h2>NPM</h2>
+
+        <p>Il a un gestionnaire de paquets
+            (npm ou yarn) très riche avec des milliers de modules.
+            Il est événementiel et non-bloquant (asynchrone).</p>
+
+        <p>Les gestionnaires de paquets sont des outils essentiels dans le développement moderne. Quand on veut ajouter
+            une nouvelle fonctionnalité cool à notre projet (comme un minuteur ou des animations), on regarde dans le
+            catalogue, on choisit ce dont on a besoin, et c'est livré directement dans notre projet !</p>
+
+        <h2>Nodemon</h2>
+
+        <p>Nodemon est un utilitaire qui surveille les fichiers dans le répertoire où tu lances ton
+            application Node. Si un fichier est modifié, il redémarre automatiquement ton serveur.</p>
+
+        <h1>Les concepts fondamentaux</h1>
+
+        <p>
+        <ul>
+            <li>Les variables : C’est des boîtes qui stockent des infos.</li>
+            <li>Les fonctions : Blocs de code réutilisables qui exécutent une tâche.</li>
+            <li>Les événements : Interactions avec l’utilisateur.</li>
+            <li>La manipulation du DOM : Modification de la page en temps réel.</li>
+        </ul>
+        Exemples d’utilisation : formulaire, animations, Maj de contenu, calculs et traitements de données,
+        interactions avec des API.</p>
+
+        <h3>Les variables </h3>
+
+        <p>Des «boites de rangement» dans lesquelles on peut stocker différentes choses.
+            Chacune des « boîtes » a une étiquette (nom de votre variable) et peut contenir différents types de choses.
+        <ul>
+            <code>
+                const myName = ‘’Mario’’; (on ne peut pas modifier)
+                let myAge = 33; (on peut la modifier)
+                var hometown = ‘’Aulnay-Sous-Bois’’; (ancien, on évite d’utiliser).
+            </code>
+        </ul>
+
+
+
+        Eviter d’oublier let ou const, essayer de modifier une constante et utiliser un nom qui n’a pas de sens.</p>
+
+
+
+        <p>Javascript s’exécute côté client (dans le navigateur) : Il travaille directement avec le client.
+
+            Il est sensible à la casse (maj/min) :
+        <ul>
+            <code>
+            let prenom = "Julie";
+            let Prenom = "Martin";
+            let PRENOM = "Sofia";
+        </code>
+        </ul>
+
+        Ces trois variables sont différentes.
+        Il est orienté objet :
+
+        <ul>
+            <code>
+        let myCar = {color: "red", brand: "Maserati", start: function() { console.log("Vroom !")}};</code>
+        </ul>
+        Il est asynchrone (peut exécuter plusieurs tâches en même temps).
+
+        <p>Les types : c’est la nature de l’information qu’on manipule.
+
+        <h3>Number (nombres) :</h3>
+        <ul>
+            <code>
+            let age = 24;
+            let prix = 299.90;
+            let temperature = -14;
+            let grandsNombre = 1_000_000_000;
+        </code>
+        </ul>
+
+        <h3>String (chaîne de caractères)</h3>
+        <ul>
+            <code>
+                let prenom = "Julien";
+                let message = "Bonjour";
+                Let template = `Mon âge est ${age}`; (Template literal)
+            </code>
+        </ul>
+        </p>
+
+        <h3>Boolean (Booléen):</h3>
+        <ul>
+            <code>
+        let isConnected = true;
+        let isClosed = false;
+    </code>
+        </ul>
+
+        <h3>Array (Tableau):</h3>
+        <ul>
+            <code>
+                let fruits = ["pomme", "grenade", "pêche"];
+                let prix = [3, 2.50, 1] ;
+                Let mixed = ["Foo", 30, true];
+            </code>
+        </ul>
+
+        <h3>Object (Objet):</h3>
+        <ul>
+            <code>
+                let person = {lastName: "Dupond", age: 50, hasSubscribed: false};
+            </code>
+        </ul>
+
+        <h3>Null</h3>
+        <ul>
+            <code>
+                let emptyFolder = null;
+            </code>
+        </ul>
+
+        <h3></h3>
+        <ul>
+            <code>
+
+            let decaleredButNotDefined;
+            </code>
+        </ul>
+
+        <h2>Les opérateurs</h2>
+
+        <h4>Opérateurs de base :</h4>
+        <ul>
+            <li>+</li>
+            <li>-</li>
+            <li>*</li>
+            <li>/</li>
+            <li>% (modulo, reste de la division)</li>
+        </ul>
+
+        <h4>Opérateurs de ternaires :</h4>
+
+        <p>C’est poser une question et avoir deux réponses possibles.</p>
+
+        <p>Structure : condition ? si vrai : si faux;</p>
+
+        <h5>Exemple</h5>
+        <code>
+            let dishesDone = true;
+            let relax = dishesDone ? "Regarde la télé" : "Va faire tes corvées !";
+            let isAdmin = false;
+            let admin = isAdmin ? "Welcome Admin" : "oops, you’re not an admin";
+        </code>
+
+        <p>
+            === compare valeur ET type.
+            5 === 5 => true
+            5 === "5" => false (number =/= string)
+        </p>
+
+        <p>
+            == compare uniquement la valeur
+            5 == 5 => true
+            5 == "5" => true (Le JS va convertir "5" en 5)
+        </p>
+
+        <p>
+            ! (NOT, NON)
+            Il inverse une condition (transforme true en false et vice versa)
+        </p>
+
+        <p>
+            != et !== (différent de)
+        </p>
+
+        <p>
+            !== (strictement différent) : Vérifie si la valeur OU le type est différent
+            5 !== "5" => true (différent car types différents)
+        </p>
+
+        <p>
+            != (différent avec conversion) : Vérifie si les valeurs sont différentes après conversion
+            5 != "5" => false car "5" est converti en 5.
+        </p>
+
+        <h2>Les fonctions</h2>
+
+        <p>
+            C’est comme une recette qu’on peut utiliser plein de fois. On met nos ingrédients (paramètres) et ça nous
+            donne
+            un plat (résultat).
+        </p>
+
+        <h3>Type de fonctions </h3>
+
+        <h4>Simple, sans paramètre(s)</h4>
+
+        <code>
+            function sayHello(){
+            return "Hello !";}
+        </code>
+
+        <h5>Son utilisation</h5>
+        <code>
+            let greetings = sayHello(); =>  "Hello"; 
+        </code>
+
+        <h4>Avec paramètre(s)</h4>
+
+        <code>
+            function chooseGame(nameGame){
+                return `Viens on joue à ${nameGame) !`;
+                }
+                let gameChoosen = chooseGame("Call Of Duty");
+        </code>
+
+        <code>
+            fonction getReady(clothes, bag, food){
+            return `J’ai un ${food} dans mon ${bag} et j’ai mis mon ${clothes}`;
+
+            let myself = getReady("sandwich", "Eastpack", "Survet"); (arguments)
+        </code>
+
+        <h4>Anonyme</h4>
+
+        <code>
+            const button = document.querySelector("button"); button.addEventListener('click', function(){ alert("Button clicked !!!");});
+        </code>
+
+        <h4>D'expression</h4>
+
+        <code>
+            const callFriend = function(){ return "Hello friend !";
+        </code>
+
+        <h4>Avec paramètres par défaut</h4>
+
+        <code>
+            function order(dish = "pizza", drink="water"){
+                return `T'as commandé : ${dish} with ${drink}`;}
+        </code>
+
+        <h4>Auto-executée (IIFE)</h4>
+
+        <p>Fonction qui s’exécute directement après avoir été créée</p>
+
+        <code>
+            (function(){
+            console.log("S’exécute seule !");})();
+        </code>
+
+        <h4>Dans un objet (méthode)</h4>
+
+
+        <code>
+            const cow = {name: "Nemo",
+                moew : function(){
+                return "moow !";
+                };
+                
+            cow.moew(); => "moow !";
+        </code>
+
+        <h2>Les conditions</h2>
+
+        <p>
+            Ce sont des structures de contrôle qui permettent d'exécuter différents blocs de code selon que certaines
+            conditions sont vraies ou fausses.
+        </p>
+
+        <h3>if/else</h3>
+
+        <code>
+            if (condition){
+                Code si vrai
+            } else {
+                Code si faux
+            }
+        </code>
+
+        <h3>for</h3>
+
+        <code>
+            for (initialisation; condition; incrémentation/décrementation){ }
+        </code>
+
+        <p>
+            Idéal quand on connaît le nombre d’itérations
+            Utiliser pour parcourir des tableaux avec index
+        </p>
+
+        <h3>while</h3>
+
+        <code>
+            while (condition){ }
+        </code>
+
+        <p>
+            Pour les conditions indéterminées
+            Pour les validations d'entrée utilisateur
+
+
+            ATTENTION, toujours avoir une condition de sortie, sous peine de boucle infinie.
+        </p>
+
+        <h3>do..while</h3>
+
+        <code>
+            do{}
+            while (condition)
+        </code>
+
+        <p>
+            S'exécute au moins une fois
+            Vérifie la condition après l'exécution
+            Idéal pour les menus et validations
+            Utile quand l'action doit être effectuée au moins une fois
+        </p>
+
+        <h3>forEach</h3>
+
+        <code>
+            array.forEach(element, index, array) => { }
+        </code>
+
+        <p>
+            On l’utilise pour parcourir un tableau.
+            Le forEach nous permet d’exécuter une fonction donnée sur chaque élément du tableau
+        </p>
+
+        <h2>En résumé</h2>
+
+        <ul>
+            <li>for est utilisé quand on connait le nombre d’itérations
+            </li>
+            <li>while quand la condition de sortie est inconnue
+            </li>
+            <li>do..While quand on veut exécuter au moins une fois</li>
+            <li>filter quand on créer un nouveau tableau basé sur une condition</li>
+            <li>forEach qui parcourt chaque élément sans créer de nouveau tableau</li>
+            <li>if/else nous permet de gérer différents cas avec des conditions</li>
+            <li>switch pour comparer une valeur à plusieurs cas</li>
+        </ul>
+
+
+    </main>
+</body>
+
+</html>

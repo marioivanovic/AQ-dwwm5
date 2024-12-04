@@ -1,6 +1,6 @@
 // Exercice 1
 
-const age = [12, 15, 23, 25, 18, 8, 30, 16, 22, 17, 29, 19, 20];
+const ages = [12, 15, 23, 25, 18, 8, 30, 16, 22, 17, 29, 19, 20];
 
 //1 Utilisez la méthode adaptées pour trouver les majeurs (+ de 18 ans)
 //2 Calculez l'age moyen
