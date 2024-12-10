@@ -1023,8 +1023,13 @@ const foods = [
 
 // Créer une phrase : " Machin fait partie de la famille des ....."
 
+"Tomatoes fait partie de la famille des fruits."
+
 const foodFamilly = foods.map(food => `${food.name} appartient à la famille ${food.family}`);
 console.log("Food familly", foodFamilly);
+
+const onlyFruits = foods.map(food => food.name);
+console.log("bar avec .map()", onlyFruits);
 
 
 

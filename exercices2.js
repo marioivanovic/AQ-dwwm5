@@ -15,3 +15,16 @@ const students = [
 // si moyenne >= 13 alors categorie : Bien, commentaire : Travail correct, si moyenne >= 10 
 // alors categorie; Assez bien, commentaire : Peut mieux faire et si moyenne < 10 alors categorie : insuffisant,
 // commentaire : "Vous devez travailler d'avantage"
+
+
+const foods = [
+    { name: "tomatoes", family: "fruits" },
+    { name: "potatoes", family: "vegetables" },
+    { name: "carrots", family: "vegetables" },
+    { name: "apple", family: "fruits" },
+    { name: "strawberries", family: "fruits" },
+    { name: "bananas", family: "fruits" }
+];
+
+// Avec un .map() + une condition, retourner uniquement les fruits.
+// sous forme de phrase (template literal)
