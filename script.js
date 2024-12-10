@@ -1,11 +1,12 @@
-// function sayHello(){
-//     return "BONJOUR DWWM5 !";}
+function sayHello() {
+    return "BONJOUR DWWM5 !";
+}
 
-// let greetings = console.log(sayHello());
+let greetings = console.log(sayHello());
 
-// function chooseGame(nameGame) {
-//     return `Viens on joue à ${nameGame}`;
-// }
+function chooseGame(nameGame) {
+    return `Viens on joue à ${nameGame}`;
+}
 
 // let gameChoosen = console.log(chooseGame("Call Of Duty !"));
 
@@ -863,11 +864,11 @@ Créez un système qui calcule une remise selon :
 // }, 1000)
 
 
-const users = [
-    { name: "bill", lastname: "bar", id: 10, age: 20, email: "foo@bar.com" },
-    { name: "jane", lastname: "doe", id: 30, age: 40, email: "jane@doe.io" },
-    { name: "jim", lastname: "foo", id: 100, age: 30, email: "jimmy@foo.org", isAdmin: true }
-];
+// const users = [
+//     { name: "bill", lastname: "bar", id: 10, age: 20, email: "foo@bar.com" },
+//     { name: "jane", lastname: "doe", id: 30, age: 40, email: "jane@doe.io" },
+//     { name: "jim", lastname: "foo", id: 100, age: 30, email: "jimmy@foo.org", isAdmin: true }
+// ];
 
 // const prods = [
 //     {
@@ -918,15 +919,15 @@ const users = [
 // console.log(isUserValid())
 
 // Fonctions fléchées ==== arrow function
-function additionner(a, b) { return a + b };
+// function additionner(a, b) { return a + b };
 
 
-console.log(additionner(3, 3));
+// console.log(additionner(3, 3));
 
 
-const addition = (a, b) => a + b;
+// const addition = (a, b) => a + b;
 
-console.log(addition(3, 8));
+// console.log(addition(3, 8));
 
 // destructuring
 
@@ -936,42 +937,42 @@ console.log(addition(3, 8));
 // const { prenom, age } = person;
 
 // Spread
-const nums = [1, 3, 7, 9];
-const num2 = [...nums, 8, 19, 39];
+// const nums = [1, 3, 7, 9];
+// const num2 = [...nums, 8, 19, 39];
 
-console.log("NUMS =>>>", nums);
-console.log("NUM2 =>>>", num2);
+// console.log("NUMS =>>>", nums);
+// console.log("NUM2 =>>>", num2);
 
-const tabs1 = [3939, 998, 98983];
-const tabs2 = [3, 9, 77, 739, 44, 55];
+// const tabs1 = [3939, 998, 98983];
+// const tabs2 = [3, 9, 77, 739, 44, 55];
 
-const fusionTabs = [...tabs1, ...tabs2];
+// const fusionTabs = [...tabs1, ...tabs2];
 
-console.log("FusionTabs =>>>", fusionTabs);
-console.log("NUM1 =>>>", tabs1)
+// console.log("FusionTabs =>>>", fusionTabs);
+// console.log("NUM1 =>>>", tabs1)
 
-const student = { name: "Julien", age: 34 };
-const addInfos = { promo: "dwwm5" };
+// const student = { name: "Julien", age: 34 };
+// const addInfos = { promo: "dwwm5" };
 
-const newInfoStudent = { ...student, ...addInfos };
-console.log("newInfoStudent =>>>", newInfoStudent);
-console.log("student =>>>", student);
+// const newInfoStudent = { ...student, ...addInfos };
+// console.log("newInfoStudent =>>>", newInfoStudent);
+// console.log("student =>>>", student);
 
 
-const card = ["iPhone", "pommes", "chaussettes"];
-const wishList = [...card];
-card.push("jus d'orange");
+// const card = ["iPhone", "pommes", "chaussettes"];
+// const wishList = [...card];
+// card.push("jus d'orange");
 
-console.log("WishList ==>", wishList);
-console.log("Card", card);
-console.log("wishList 2 ==>", wishList)
+// console.log("WishList ==>", wishList);
+// console.log("Card", card);
+// console.log("wishList 2 ==>", wishList)
 
 
 // .map()
 
-const numbs = [3, 4, 6];
-const triple = numbs.map(t => t * 3);
-console.log("Triple = ", triple);
+// const numbs = [3, 4, 6];
+// const triple = numbs.map(t => t * 3);
+// console.log("Triple = ", triple);
 
 
 const cities = [
@@ -985,29 +986,68 @@ const cities = [
     { name: "Lille", country: "France", }
 ]
 
-for (let i = 0; i < cities.length; i++) {
-    console.log("Sans if : ", cities[i].name);
-}
+// for (let i = 0; i < cities.length; i++) {
+//     console.log("Sans if : ", cities[i].name);
+// }
 
-const onlyNames = cities.map(city => city.name);
-console.log("City avec .map()", onlyNames);
+// const onlyNames = cities.map(city => city.name);
+// console.log("City avec .map()", onlyNames);
 
-const citiesWithIndex = cities.map((city, index) => `${index}. ${city.name}`);
-console.log("City avec index", citiesWithIndex);
+// const citiesWithIndex = cities.map((city, index) => `${index}. ${city.name}`);
+// console.log("City avec index", citiesWithIndex);
 
 
-cities.forEach(city => { console.log(` Avec forEach : ${city.name} est en ${city.country}`) })
+// cities.forEach(city => { console.log(` Avec forEach : ${city.name} est en ${city.country}`) })
 
-// const newTown = [...cities, { name: "Toulouse", country: "France", }]
-// console.log("NewTown : ", newTown)
-
-console.log("Cities", cities)
-
-const newCity = { name: "Reims", country: "France", }
-
-cities.push(newCity)
 const newTown = [...cities, { name: "Toulouse", country: "France", }]
 console.log("NewTown : ", newTown)
-console.log("NewCity dans cities :", cities)
+
+// console.log("Cities", cities)
+
+// const newCity = { name: "Reims", country: "France", }
+
+// cities.push(newCity)
+// const newTown = [...cities, { name: "Toulouse", country: "France", }]
+// console.log("NewTown : ", newTown)
+// console.log("NewCity dans cities :", cities)
 // console.log("newTown après push", newTown)
+
+const foods = [
+    { name: "tomatoes", family: "fruits" },
+    { name: "potatoes", family: "vegetables" },
+    { name: "carrots", family: "vegetables" },
+    { name: "apple", family: "fruits" },
+    { name: "strawberries", family: "fruits" },
+    { name: "bananas", family: "fruits" }
+];
+
+// Créer une phrase : " Machin fait partie de la famille des ....."
+
+const foodFamilly = foods.map(food => `${food.name} appartient à la famille ${food.family}`);
+console.log("Food familly", foodFamilly);
+
+
+
+
+// Consigne => ajouter le poste et l'ancienneté dans l'entreprise avec spread operator
+// poste: developpeur fullstack
+// ancienneté: 10
+
+const employee = {
+    name: "Bertrand",
+    age: 36,
+    city: "La Rochelle"
+};
+const newInfosEmployee = {
+    ...employee,
+    poste: "developpeur fullstack",
+    yearsIn: 10
+};
+
+console.log("Employee ====>", employee);
+console.log("newinfosEmployee ===>", newInfosEmployee);
+// console.log("Employee 2 :>", employee)
+
+
+
 
