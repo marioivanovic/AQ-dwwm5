@@ -576,11 +576,11 @@ Créez un système qui calcule une remise selon :
 //     contenuBol -= qteMangee;
 // } while (contenuBol >= 0);
 
-// const users = [{ name: "Samia" }, { name: "Jordan" }, { name: "Lucie" }, { name: "Mathis" }, { name: "Eleanore" }, { name: "Bruno" }, { name: "Louis" }];
+// const persons = [{ name: "Samia" }, { name: "Jordan" }, { name: "Lucie" }, { name: "Mathis" }, { name: "Eleanore" }, { name: "Bruno" }, { name: "Louis" }];
 
 
-// for (let i = 0; i < users.length; i += 1) {
-//     console.log(i, users[i].name)
+// for (let i = 0; i < persons.length; i += 1) {
+//     console.log(i, persons[i].name)
 // }
 
 // console.log("-------")
