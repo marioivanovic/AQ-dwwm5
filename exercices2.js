@@ -7,4 +7,11 @@ const students = [
 ];
 
 // Trouver les étudiants de Paris et calculer leur moyenne (map)
+
 // Ajouter une notes aux étudiants ayant plus de 15 de moyenne (spread + conditions)
+
+// Catégoriser les étudiants en fonction de leur moyenne, si moyenne >= à 16 alors : 
+// catégorie : Excellent, commentaire : Félicitations
+// si moyenne >= 13 alors categorie : Bien, commentaire : Travail correct, si moyenne >= 10 
+// alors categorie; Assez bien, commentaire : Peut mieux faire et si moyenne < 10 alors categorie : insuffisant,
+// commentaire : "Vous devez travailler d'avantage"
