@@ -685,241 +685,329 @@ Créez un système qui calcule une remise selon :
 // console.log(cat.talk("bonne"))
 
 
-for (let i = 0; i <= 10; i++) {
-    console.log(`2 x ${i} = ${2 * i}`)
-}
+// for (let i = 0; i <= 10; i++) {
+//     console.log(`2 x ${i} = ${2 * i}`)
+// }
 
-let i = 10;
-while (i >= 0) {
-    console.log(i)
-    i--;
-}
+// let i = 10;
+// while (i >= 0) {
+//     console.log(i)
+//     i--;
+// }
 
 // i++ === i += 1;
 
-const nombres = [1, 4, 8, 12, 98, 10005, 99304, 938839, 992886630090];
-let liste = [];
+// const nombres = [1, 4, 8, 12, 98, 10005, 99304, 938839, 992886630090];
+// let liste = [];
 
-for (let i = 0; i < nombres.length; i++) {
-    if (nombres[i] % 2 === 0) {
-        liste.push(nombres[i])
-    }
-}
+// for (let i = 0; i < nombres.length; i++) {
+//     if (nombres[i] % 2 === 0) {
+//         liste.push(nombres[i])
+//     }
+// }
 
-const nombres2 = [1, 4, 8, 12, 98, 10005, 99304, 938839, 992886630090];
-let liste2 = [];
+// const nombres2 = [1, 4, 8, 12, 98, 10005, 99304, 938839, 992886630090];
+// let liste2 = [];
 
-nombres2.forEach((nombre) => {
-    if (nombre % 2 === 0) {
-        liste2.push(nombre)
-    }
-})
-
-
-
-
-console.log("Nombres pairs avec for :", liste)
-console.log(liste2)
-
-const card = [{ name: "Ps5", price: 700 },
-{ name: "Xbox", price: 400 },
-{ name: "PC", price: 2000 },
-{ name: "Nintendo Switch", price: 300 },];
-let total = 0;
-card.forEach((article) => {
-    total += article.price
-    console.log(` Article : ${article.name} - Price : ${article.price}`);
-})
-
-console.log(`Total : ${total} €`)
+// nombres2.forEach((nombre) => {
+//     if (nombre % 2 === 0) {
+//         liste2.push(nombre)
+//     }
+// })
 
 
 
 
+// console.log("Nombres pairs avec for :", liste)
+// console.log(liste2)
+
+// const card = [{ name: "Ps5", price: 700 },
+// { name: "Xbox", price: 400 },
+// { name: "PC", price: 2000 },
+// { name: "Nintendo Switch", price: 300 },];
+// let total = 0;
+// card.forEach((article) => {
+//     total += article.price
+//     console.log(` Article : ${article.name} - Price : ${article.price}`);
+// })
+
+// console.log(`Total : ${total} €`)
 
 
-let x = 100;
-function bar() {
-    let count = 10;
-    console.log("---1----")
-    console.log("count dans bar :", count);
-    console.log("x dans bar :", x);
-}
-
-console.log(bar())
-
-function baz() {
-    let count = 0;
-    console.log("---2----");
-    console.log("count dans baz", count);
-    console.log("x dans baz :", x);
-}
-console.log(baz());
 
 
-let varGlobale = "Je suis globale";
-console.log(varGlobale)
-function test() {
-    let varLocale = "Je suis locale";
-    console.log(varLocale)
-    console.log(varGlobale)
-}
-console.log(varGlobale)
-console.log(test())
+
+
+// let x = 100;
+// function bar() {
+//     let count = 10;
+//     console.log("---1----")
+//     console.log("count dans bar :", count);
+//     console.log("x dans bar :", x);
+// }
+
+// console.log(bar())
+
+// function baz() {
+//     let count = 0;
+//     console.log("---2----");
+//     console.log("count dans baz", count);
+//     console.log("x dans baz :", x);
+// }
+// console.log(baz());
+
+
+// let varGlobale = "Je suis globale";
+// console.log(varGlobale)
+// function test() {
+//     let varLocale = "Je suis locale";
+//     console.log(varLocale)
+//     console.log(varGlobale)
+// }
+// console.log(varGlobale)
+// console.log(test())
 // console.log(varLocale)
 
 
-function gateau(recette) {
-    console.log("préparation des ingrédients");
-    console.log("début de la préparation");
-    recette();
-}
+// function gateau(recette) {
+//     console.log("préparation des ingrédients");
+//     console.log("début de la préparation");
+//     recette();
+// }
 
-function recette() {
-    console.log("on fait le gateau ici!")
-}
+// function recette() {
+//     console.log("on fait le gateau ici!")
+// }
 
-console.log(gateau(recette));
+// console.log(gateau(recette));
 
-const products = [{
-    id: 1, name: "iPhone", price: 1500, stock: 0
-},
-{
-    id: 1, name: "Samsung", price: 1200, stock: 9800
-},
-{
-    id: 1, name: "Huawai", price: 500, stock: 11220
-},
-{
-    id: 1, name: "Motorola", price: 100, stock: 44330
-},
-{
-    id: 1, name: "Nokia", price: 200, stock: 30
-},
-{
-    id: 1, name: "LG", price: 700, stock: 400
-},
-{
-    id: 1, name: "Pixel", price: 1000, stock: 90
-},
-{
-    id: 1, name: "Oppo", price: 900, stock: 3
-}]
+// const products = [{
+//     id: 1, name: "iPhone", price: 1500, stock: 0
+// },
+// {
+//     id: 1, name: "Samsung", price: 1200, stock: 9800
+// },
+// {
+//     id: 1, name: "Huawai", price: 500, stock: 11220
+// },
+// {
+//     id: 1, name: "Motorola", price: 100, stock: 44330
+// },
+// {
+//     id: 1, name: "Nokia", price: 200, stock: 30
+// },
+// {
+//     id: 1, name: "LG", price: 700, stock: 400
+// },
+// {
+//     id: 1, name: "Pixel", price: 1000, stock: 90
+// },
+// {
+//     id: 1, name: "Oppo", price: 900, stock: 3
+// }]
 
 
-function productFiltered(productsFilter, priceLimit) {
-    const filtered = [];
-    for (let index = 0; index < productsFilter.length; index++) {
-        if (productsFilter[index].price >= priceLimit) {
-            filtered.push(productsFilter[index]);
-        }
-    }
-    return filtered;
-}
-const filtered1 = products.filter(function (product) {
-    return product.price >= 1000;
-});
-const newFiltered = products.filter(product => product.price >= 1000);
+// function productFiltered(productsFilter, priceLimit) {
+//     const filtered = [];
+//     for (let index = 0; index < productsFilter.length; index++) {
+//         if (productsFilter[index].price >= priceLimit) {
+//             filtered.push(productsFilter[index]);
+//         }
+//     }
+//     return filtered;
+// }
+// const filtered1 = products.filter(function (product) {
+//     return product.price >= 1000;
+// });
+// const newFiltered = products.filter(product => product.price >= 1000);
 
-console.log(productFiltered(products, 1000));
-console.log("Filter =>", filtered1);
-console.log("New filter = >", newFiltered)
+// console.log(productFiltered(products, 1000));
+// console.log("Filter =>", filtered1);
+// console.log("New filter = >", newFiltered)
 
-const sum = products.reduce(function (accumulateur, product) {
-    if (isNaN(product.price)) throw new TypeError("sorry gros, ça marche pas ici !!!");
-    return (accumulateur += Number(product.price));
-}, 0);
+// const sum = products.reduce(function (accumulateur, product) {
+//     if (isNaN(product.price)) throw new TypeError("sorry gros, ça marche pas ici !!!");
+//     return (accumulateur += Number(product.price));
+// }, 0);
 
-console.log("Somme du prix de tous les produits est :", sum)
+// console.log("Somme du prix de tous les produits est :", sum)
 
-const array1 = [1, 2, 3, 4];
+// const array1 = [1, 2, 3, 4];
 
-const initalValue = 0;
+// const initalValue = 0;
 
-const sumInitial = array1.reduce((accumulateur, currentValue) => accumulateur + currentValue, initalValue);
+// const sumInitial = array1.reduce((accumulateur, currentValue) => accumulateur + currentValue, initalValue);
 
-console.log(sumInitial);
+// console.log(sumInitial);
 
 // Synchrone - Asynchrone 
 
-const timeOut = setTimeout(function () {
-    console.log("Action 1 terminée !!! Yay !");
-    clearTimeout(timeOut);
-}, 3000)
+// const timeOut = setTimeout(function () {
+//     console.log("Action 1 terminée !!! Yay !");
+//     clearTimeout(timeOut);
+// }, 3000)
 
-const callback = () => {
-    console.log("Autre action terminée !")
-    clearTimeout(callback)
-}
+// const callback = () => {
+//     console.log("Autre action terminée !")
+//     clearTimeout(callback)
+// }
 
-const newTimeOut = setTimeout(callback, 3000);
+// const newTimeOut = setTimeout(callback, 3000);
 
-let countFoo = 0;
+// let countFoo = 0;
 
-const interval = setInterval(() => {
-    countFoo++
-    console.log("count ++ setInterval", countFoo);
-    if (countFoo === 10) clearInterval(interval)
-}, 1000)
+// const interval = setInterval(() => {
+//     countFoo++
+//     console.log("count ++ setInterval", countFoo);
+//     if (countFoo === 10) clearInterval(interval)
+// }, 1000)
 
 
 const users = [
     { name: "bill", lastname: "bar", id: 10, age: 20, email: "foo@bar.com" },
     { name: "jane", lastname: "doe", id: 30, age: 40, email: "jane@doe.io" },
-    {
-      name: "jim",
-      lastname: "foo",
-      id: 100,
-      age: 30,
-      email: "jimmy@foo.org",
-      isAdmin: true
-    }
-  ];
-
-const prods = [
-    {
-        id: 1,
-        name: "Sony Bravia",
-        price: 500,
-        stock: 20,
-        rate: 3.5,
-        category: "multimedia"
-    },
-    {
-        id: 2,
-        name: "skateboard element full",
-        price: 180,
-        stock: 3,
-        rate: 5,
-        category: "sport"
-    },
-    {
-        id: 3,
-        name: "Samsung S7",
-        price: 600,
-        stock: 10,
-        rate: 4,
-        category: "multimedia"
-    },
-    {
-        id: 4,
-        name: "Baby radio",
-        price: 20,
-        stock: 100,
-        rate: 5,
-        category: "babies"
-    }
+    { name: "jim", lastname: "foo", id: 100, age: 30, email: "jimmy@foo.org", isAdmin: true }
 ];
 
-const orders = [
-    { id: 1, userID: 10, productID: 1234, quantity: 2, date: "19-02-2019" },
-    { id: 2, userID: 10, productID: 1, quantity: 1, date: "01-01-2020" },
-    { id: 3, userID: 30, productID: 2, quantity: 1, date: "25-03-2020" }
-];
-  
-function isUserValid(id) {
-    const userFound = users.filter(user => user.id === id);
-    return userFound.length === 1;
+// const prods = [
+//     {
+//         id: 1,
+//         name: "Sony Bravia",
+//         price: 500,
+//         stock: 20,
+//         rate: 3.5,
+//         category: "multimedia"
+//     },
+//     {
+//         id: 2,
+//         name: "skateboard element full",
+//         price: 180,
+//         stock: 3,
+//         rate: 5,
+//         category: "sport"
+//     },
+//     {
+//         id: 3,
+//         name: "Samsung S7",
+//         price: 600,
+//         stock: 10,
+//         rate: 4,
+//         category: "multimedia"
+//     },
+//     {
+//         id: 4,
+//         name: "Baby radio",
+//         price: 20,
+//         stock: 100,
+//         rate: 5,
+//         category: "babies"
+//     }
+// ];
+
+// const orders = [
+//     { id: 1, userID: 10, productID: 1234, quantity: 2, date: "19-02-2019" },
+//     { id: 2, userID: 10, productID: 1, quantity: 1, date: "01-01-2020" },
+//     { id: 3, userID: 30, productID: 2, quantity: 1, date: "25-03-2020" }
+// ];
+
+// function isUserValid(id) {
+//     const userFound = users.filter(user => user.id === id);
+//     return userFound.length === 1;
+// }
+
+// console.log(isUserValid())
+
+// Fonctions fléchées ==== arrow function
+function additionner(a, b) { return a + b };
+
+
+console.log(additionner(3, 3));
+
+
+const addition = (a, b) => a + b;
+
+console.log(addition(3, 8));
+
+// destructuring
+
+// const prenom = person.prenom;
+// const age = person.age;
+
+// const { prenom, age } = person;
+
+// Spread
+const nums = [1, 3, 7, 9];
+const num2 = [...nums, 8, 19, 39];
+
+console.log("NUMS =>>>", nums);
+console.log("NUM2 =>>>", num2);
+
+const tabs1 = [3939, 998, 98983];
+const tabs2 = [3, 9, 77, 739, 44, 55];
+
+const fusionTabs = [...tabs1, ...tabs2];
+
+console.log("FusionTabs =>>>", fusionTabs);
+console.log("NUM1 =>>>", tabs1)
+
+const student = { name: "Julien", age: 34 };
+const addInfos = { promo: "dwwm5" };
+
+const newInfoStudent = { ...student, ...addInfos };
+console.log("newInfoStudent =>>>", newInfoStudent);
+console.log("student =>>>", student);
+
+
+const card = ["iPhone", "pommes", "chaussettes"];
+const wishList = [...card];
+card.push("jus d'orange");
+
+console.log("WishList ==>", wishList);
+console.log("Card", card);
+console.log("wishList 2 ==>", wishList)
+
+
+// .map()
+
+const numbs = [3, 4, 6];
+const triple = numbs.map(t => t * 3);
+console.log("Triple = ", triple);
+
+
+const cities = [
+    { name: "Paris", country: "France" },
+    { name: "Marseille", country: "France" },
+    { name: "Lyon", country: "France", },
+    { name: "Brest", country: "France", },
+    { name: "Strasbourg", country: "France", },
+    { name: "Bordeaux", country: "France", },
+    { name: "Quimper", country: "France", },
+    { name: "Lille", country: "France", }
+]
+
+for (let i = 0; i < cities.length; i++) {
+    console.log("Sans if : ", cities[i].name);
 }
 
-console.log(isUserValid())
+const onlyNames = cities.map(city => city.name);
+console.log("City avec .map()", onlyNames);
+
+const citiesWithIndex = cities.map((city, index) => `${index}. ${city.name}`);
+console.log("City avec index", citiesWithIndex);
+
+
+cities.forEach(city => { console.log(` Avec forEach : ${city.name} est en ${city.country}`) })
+
+// const newTown = [...cities, { name: "Toulouse", country: "France", }]
+// console.log("NewTown : ", newTown)
+
+console.log("Cities", cities)
+
+const newCity = { name: "Reims", country: "France", }
+
+cities.push(newCity)
+const newTown = [...cities, { name: "Toulouse", country: "France", }]
+console.log("NewTown : ", newTown)
+console.log("NewCity dans cities :", cities)
+// console.log("newTown après push", newTown)
+
